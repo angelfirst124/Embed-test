@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+# Embed Frontend Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Author
 
-## Available Scripts
+### Name: Denis Nishikawa
+### Email: denishikawa1226@gmail.com
 
-In the project directory, you can run:
+### Live Demo: https://frontend-assignmentapp.herokuapp.com/
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Description
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Created by using [Create React App](https://github.com/facebook/create-react-app) (CRA) _template_ with following libraries including:
 
-### `yarn test`
+  - React v17.0.2
+  - Type Checker - TypeScript
+  - State management - Redux Thunk & Toolkit
+  - Style system - SCSS
+  - Format & Lint - ESLint & Prettier
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Custom Templates, format, and ESlint configurations.
 
-### `yarn build`
+## Setup Environments
+  - Node 16.2.0
+  - npm 1.22.17
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  ```
+  npm install
+  ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  or
+  ```
+  yarn install
+  ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Run Scripts
 
-### `yarn eject`
+Inside the project directory run:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `npm start` - runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `npm build` - builds the app for production to the `build` folder.
+- `npm build:serve` - run a local static build using the production build using serve library. Install `npm install -g serve`.
+- `npm eject` - exposes content of `react-script` package
+- `npm lint` - lints project files according to Airbnb — as part of their style guide 👍 — it provides an ESLint configuration that anyone can use and it is the standard.
+- `npm fix` - fix lint errors.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+CRA template only support `scripts` and `dependencies` inside generated `package.json`. No `devDependencies` is possible on CRA template for now.
