@@ -28,9 +28,12 @@ const Dashboard: React.FC = () => {
             list={howToList}
           />
         }
-        <QuestionAnswerSec
-          list={qaList}
-        />
+        {
+          qaList.length > 0 &&
+          <QuestionAnswerSec
+            list={qaList}
+          />
+        }
         <PictureSec />
       </div>
     </div>
