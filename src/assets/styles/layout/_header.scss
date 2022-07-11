@@ -1,0 +1,129 @@
+//
+// Header
+//
+
+.header-container {
+    width: 100%;
+    box-shadow: 0px 0px 12px -7px #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 45px;
+    @media screen and (max-width: 560px) {
+        padding: 25px;
+    }
+}
+
+.header-logo {
+    display: flex;
+    text-decoration: none;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.header-logo h2 {
+    font-size: 33px;
+    @media screen and (max-width: 560px) {
+        display: none;
+    }
+}
+
+.header-link-items {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 65px;
+    @media screen and (max-width: 560px) {
+        display: none;
+    }    
+}
+
+.header-link-items a {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 28px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.header-trigger {
+    font-size: 24px;
+    margin: auto 0;
+    @media screen and (min-width: 560px) {
+        display: none;
+    }
+}
+
+.header-nav__overlay {
+    background-color: rgba(0,0,0,.6);
+    display: block;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+.header-nav__wrapper {
+    background-color: #280A5F;
+    box-shadow: 0 0 9px 0 hsl(0deg 2% 77% / 50%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    left: calc(-100% - 20px);
+    position: fixed;
+    top: 0;
+    transition: left .3s ease-in;
+    width: 80vw;
+    z-index: 1002;
+    & > ul {
+        list-style: none;
+        & > li {
+            margin-bottom: 60px;
+            & > .link-item {
+                font-size: 24px;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+            }
+        }
+        & > li:last-child {
+            font-size: 40px;
+            & .footer__link-icon {
+                margin-right: 30px;
+            }
+        }
+    }
+    .header-side__nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        color: white;
+        & > svg {
+            font-size: 30px;
+            &:hover {
+                color: #9484AF;
+            }         
+        }
+        & > img {
+            width: 40px;
+        }
+    }
+}
+
+.header-nav__wrapper.header-nav__opened {
+    left: 0;
+}

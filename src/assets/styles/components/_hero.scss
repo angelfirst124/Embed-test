@@ -1,0 +1,60 @@
+//
+// Hero
+//
+
+.hero-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 132px;
+    @media screen and (max-width: 560px) {
+        margin-bottom: 75px;
+    }    
+}
+
+.hero-container > img {
+    width: 100%;
+    @media screen and (max-width: 560px) {
+        height: 572px;
+        object-fit: cover;
+    }
+}
+
+.hero-content {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #ffffff;
+}
+
+.hero-content .white-logo {
+    width: 95px;
+    @media screen and (max-width: 560px) {
+        display: none;
+    }
+}
+
+.hero-content h2 {
+    width: 50%;
+    font-size: 64px;
+    margin: 30px 0 0 0;
+    @media screen and (max-width: 560px) {
+        font-size: 40px;
+        width: 90%;
+    }
+}
+
+.hero-content p {
+    width: 43%;
+    @media screen and (max-width: 560px) {
+        width: 90%;
+    }
+}
+
+.hero-content .title-bar {
+    width: 45%;
+}
