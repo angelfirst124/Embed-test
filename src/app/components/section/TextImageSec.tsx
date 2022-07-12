@@ -1,6 +1,7 @@
 import React from 'react'
 import ArrowButton from 'app/components/button/ArrowButton'
 import EarnSectionImage from 'assets/images/earn-section-image.png'
+import Gif from 'assets/images/nft-montage-earn.gif'
 
 const TextImageSec: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ const TextImageSec: React.FC = () => {
           />
         </div>
         <div className='dashboard__image__text__section-top-right'>
-          <img src={EarnSectionImage} alt='earn section'/>
+          <img src={Gif} alt='earn section'/>
         </div>
       </div>
       <div className='dashboard__image__text__section-bottom'>

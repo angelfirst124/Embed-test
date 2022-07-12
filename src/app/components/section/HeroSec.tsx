@@ -1,6 +1,6 @@
 import React from 'react'
 import ArrowButton from 'app/components/button/ArrowButton'
-import heroImage from 'assets/images/hero_image.png'
+import heroImage from 'assets/images/hero_image.gif'
 import whiteLogoUrl from 'assets/images/embed_logo_white.svg'
 import TitleBar from 'assets/images/title_bar.svg'
 
